@@ -2,4 +2,7 @@
 <% @familles.each do |famille| %>
   <h2><%= famille.name %></h2>
   <p><%= famille.description %></p>
+
+  <%= link_to "Allez voir", famille_items_path(famille) %>
+
 <% end %>

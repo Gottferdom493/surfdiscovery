@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root to: 'familles#index'
-  resources :familles
+
+  resources :familles do
+    resources :items
+  end
 
 
 
